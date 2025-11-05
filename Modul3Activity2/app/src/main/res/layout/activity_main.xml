@@ -12,16 +12,15 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Halaman Kedua"
+        android:text="Halaman Pertama"
         android:layout_gravity="center"
         android:textAlignment="center" />
 
     <Button
-        android:id="@+id/btn_pindah_halaman1"
+        android:id="@+id/btn_pindah_halaman"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Pindah Halaman ke-1" />
+        android:text="Pindah Halaman ke-2" />
 
 </LinearLayout>
-
