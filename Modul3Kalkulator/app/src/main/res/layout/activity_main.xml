@@ -39,4 +39,27 @@
             android:contentDescription="Segitiga button" />
     </LinearLayout>
 
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_lingkaran"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Lingkaran"
+            android:contentDescription="Lingkaran button" />
+
+        <Button
+            android:id="@+id/btn_persegi_panjang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Persegi Panjang"
+            android:contentDescription="Persegi Panjang button" />
+    </LinearLayout>
+
 </LinearLayout>

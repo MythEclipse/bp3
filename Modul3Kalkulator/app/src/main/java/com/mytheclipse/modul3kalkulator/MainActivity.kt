@@ -17,6 +17,8 @@ class MainActivity : AppCompatActivity() {
         // inisialisasi button yang ada di activity_main.xml
         val btnPersegi = findViewById<Button>(R.id.btn_persegi)
         val btnSegitiga = findViewById<Button>(R.id.btn_segitiga)
+        val btnLingkaran = findViewById<Button>(R.id.btn_lingkaran)
+        val btnPersegiPanjang = findViewById<Button>(R.id.btn_persegi_panjang)
 
         btnPersegi.setOnClickListener {
             // intent untuk berpindah activity
@@ -27,6 +29,18 @@ class MainActivity : AppCompatActivity() {
         btnSegitiga.setOnClickListener {
             // intent untuk berpindah activity
             val intent = Intent(this, SegitigaActivity::class.java)
+            startActivity(intent)
+        }
+
+        btnLingkaran.setOnClickListener {
+            // intent untuk berpindah activity
+            val intent = Intent(this, LingkaranActivity::class.java)
+            startActivity(intent)
+        }
+
+        btnPersegiPanjang.setOnClickListener {
+            // intent untuk berpindah activity
+            val intent = Intent(this, PersegiPanjangActivity::class.java)
             startActivity(intent)
         }
 

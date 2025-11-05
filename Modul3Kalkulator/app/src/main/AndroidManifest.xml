@@ -26,6 +26,12 @@
         <activity
             android:name=".SegitigaActivity"
             android:exported="false" />
+        <activity
+            android:name=".LingkaranActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PersegiPanjangActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
