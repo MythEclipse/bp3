@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tv_object_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nama" />
+
+    <TextView
+        android:id="@+id/tv_object_nim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NIM" />
+    <TextView
+        android:id="@+id/tv_object_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email" />
+
+    <TextView
+        android:id="@+id/tv_object_usia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Usia" />
+
+    <TextView
+        android:id="@+id/tv_object_kota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kota" />
+
+</LinearLayout>
