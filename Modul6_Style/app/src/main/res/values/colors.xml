@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue">#6200EA</color>
+    <color name="orange">#FFAB00</color>
+    <color name="my_dark_primary">#BB86FC</color>
+    <color name="my_light_on_primary">#FFFFFF</color>
+    <color name="my_dark_secondary">#03DAC5</color>
+    <color name="my_light_on_secondary">#000000</color>
+    <color name="action_bar">@color/blue</color>
+
+    <!-- Brand Colors -->
+    <color name="brand_gradient_start">#6200EA</color>
+    <color name="brand_gradient_end">#0BBBD6</color>
+    <color name="brand_primary">#6200EA</color>
+    <color name="brand_secondary">#FFAB00</color>
+    <color name="brand_surface">#FFFFFFFF</color>
+    <color name="brand_surface_alt">#F6F7FB</color>
+    <color name="brand_text_primary">#1E1F3B</color>
+    <color name="brand_text_secondary">#66677A</color>
+    <color name="brand_border">#DADCEF</color>
+    <color name="brand_muted">#E8E9F4</color>
+
+    <!-- Aliases for easy reference -->
+    <color name="primaryColor">@color/brand_primary</color>
+    <color name="secondaryColor">@color/brand_secondary</color>
+</resources>

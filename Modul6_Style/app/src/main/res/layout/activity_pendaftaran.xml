@@ -1,6 +1,193 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:orientation="vertical">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            tools:ignore="ExtraText">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                app:srcCompat="@drawable/logo_uniku" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="24dp"
+                android:text="FORMULIR PENDAFTARAN MAHASISWA"
+                android:textAlignment="center"
+                style="@style/judul" />
+
+            <TextView
+                style="@style/subjudul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama" />
+
+            <EditText
+                android:id="@+id/editTextNama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukkan Nama Anda"
+                style="@style/CustomEditText" />
+
+            <TextView
+                style="@style/subjudul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email" />
+
+            <EditText
+                android:id="@+id/edtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukkan Email Anda"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                style="@style/CustomEditText"
+                android:outlineAmbientShadowColor="#FFFFFFFF"
+                android:outlineSpotShadowColor="#FDFDFC" />
+
+            <TextView
+                style="@style/subjudul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jenis Kelamin" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:outlineAmbientShadowColor="#F6D2D2"
+                android:outlineSpotShadowColor="#F3EAEA"
+                android:textAlignment="center">
+
+                <RadioButton
+                    android:id="@+id/rbnLaki"
+                    style="@style/subjudul"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Laki-Laki" />
+
+                <RadioButton
+                    android:id="@+id/rbnPerempuan"
+                    style="@style/subjudul"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Perempuan" />
+            </RadioGroup>
+
+            <TextView
+                style="@style/subjudul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nomor Handphone" />
+
+            <EditText
+                android:id="@+id/edtNoHP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukkan Nomor Handphone Anda"
+                android:inputType="phone"
+                style="@style/CustomEditText" />
+
+            <TextView
+                style="@style/subjudul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tempat Lahir" />
+
+            <EditText
+                android:id="@+id/edtTempatLahir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukkan Tempat Lahir"
+                style="@style/CustomEditText" />
+
+            <TextView
+                style="@style/subjudul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tanggal Lahir" />
+
+            <EditText
+                android:id="@+id/edtTanggalLahir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukkan Tanggal Lahir"
+                android:inputType="datetime"
+                style="@style/CustomEditText" />
+
+            <TextView
+                style="@style/subjudul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Alamat" />
+
+            <EditText
+                android:id="@+id/edtTextMultiLine"
+                style="@style/CustomEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:hint="Masukkan Alamat"
+                android:inputType="textMultiLine" />
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                style="@style/subjudul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="Data yang telah diisi sudah benar" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnSimpan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Simpan"
+                    style="@style/newButton" />
+
+                <Button
+                    android:id="@+id/btn_kembali"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Kembali"
+                    style="@style/newButton" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
