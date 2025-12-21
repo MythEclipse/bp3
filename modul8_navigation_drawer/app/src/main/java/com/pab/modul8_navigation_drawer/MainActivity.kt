@@ -45,6 +45,15 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 .commit()
             navigationView.setCheckedItem(R.id.nav_home)
         }
+
+        // Check for fragment to load from intent
+        val loadFragment = intent.getStringExtra("load_fragment")
+        if (loadFragment == "send") {
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container, SendFragment())
+                .commit()
+            navigationView.setCheckedItem(R.id.nav_send)
+        }
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
