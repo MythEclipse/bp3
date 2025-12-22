@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Shake Detector</string>
+    <style name="Theme.Modul10_shake_detector" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#4ECDC4</item>
+        <item name="colorPrimaryVariant">#45B7D1</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorSecondary">#FF6B6B</item>
+        <item name="colorSecondaryVariant">#FF5252</item>
+        <item name="colorOnSecondary">#000000</item>
+        <item name="android:statusBarColor">#1a1a2e</item>
+        <item name="android:navigationBarColor">#1a1a2e</item>
+    </style>
+</resources>

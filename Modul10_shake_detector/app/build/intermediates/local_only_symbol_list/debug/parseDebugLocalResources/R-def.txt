@@ -1,0 +1,19 @@
+R_DEF: Internal format may change without notice
+local
+drawable card_background
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id AccelerometerXTextView
+id AccelerometerYTextView
+id AccelerometerZTextView
+id StatusTextView
+id WarningTextView
+id main
+layout activity_main
+mipmap ic_launcher
+mipmap ic_launcher_round
+raw alarm
+string app_name
+style Theme.Modul10_shake_detector
+xml backup_rules
+xml data_extraction_rules
