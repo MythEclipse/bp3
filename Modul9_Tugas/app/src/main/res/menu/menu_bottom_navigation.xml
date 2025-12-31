@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_ai_chat"
+        android:icon="@android:drawable/ic_menu_send"
+        android:title="AI Chat" />
+    
+    <item
+        android:id="@+id/nav_downloader"
+        android:icon="@android:drawable/stat_sys_download"
+        android:title="Downloader" />
+    
+    <item
+        android:id="@+id/nav_image_tools"
+        android:icon="@android:drawable/ic_menu_gallery"
+        android:title="Image Tools" />
+    
+    <item
+        android:id="@+id/nav_search"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="Search" />
+</menu>

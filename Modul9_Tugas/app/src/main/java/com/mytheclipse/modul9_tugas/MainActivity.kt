@@ -1,20 +1,56 @@
 package com.mytheclipse.modul9_tugas
 
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import androidx.fragment.app.Fragment
+import com.mytheclipse.modul9_tugas.databinding.ActivityMainBinding
+import com.mytheclipse.modul9_tugas.fragments.*
+import android.view.MenuItem
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
+    
+    private lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContentView(R.layout.activity_main)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        if (savedInstanceState == null) {
+            loadFragment(AiChatFragment())
         }
+        
+        setupBottomNavigation()
+    }
+    
+    private fun setupBottomNavigation() {
+        binding.bottomNavigation.setOnItemSelectedListener { item: MenuItem ->
+            when (item.itemId) {
+                R.id.nav_ai_chat -> {
+                    loadFragment(AiChatFragment())
+                    true
+                }
+                R.id.nav_downloader -> {
+                    loadFragment(DownloaderFragment())
+                    true
+                }
+                R.id.nav_image_tools -> {
+                    loadFragment(ImageToolsFragment())
+                    true
+                }
+                R.id.nav_search -> {
+                    loadFragment(SearchFragment())
+                    true
+                }
+                else -> false
+            }
+        }
+    }
+    
+    private fun loadFragment(fragment: Fragment) {
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.fragmentContainer, fragment)
+            .commit()
     }
 }
